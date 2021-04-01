@@ -1,0 +1,34 @@
+
+# play paper,scissor and rock with computer
+
+import random
+# 1-> paper
+# 2-> scissors
+# 3-> Rock
+list1 = ["1","2","3"]
+computer = random.choice(list1)
+user = input("Enter the number you want to guess in 1, 2, 3 : ")
+
+if user == "1" and computer == "1":
+    print(f"user goes with paper same as compter, match is drawww..")
+elif user == "1" and computer == "2":
+    print(f"user goes with paper and compter goes with scissors, computer wins..")
+elif user == "1" and computer == "3":
+    print(f"user goes with paper and compter goes with rock, user wins..")
+
+elif user == "2" and computer == "1":
+        print(f"user goes with scissors and computer goes with paper, user wins....")
+elif user == "2" and computer == "2":
+        print(f"user goes with scissors same as compter, match is drawww..")
+elif user == "2" and computer == "3":
+        print(f"user goes with scissors and compter goes with rock, computer wins..")
+
+elif user == "3" and computer == "1":
+        print(f"user goes with Rock and computer goes with paper, computer wins....")
+elif user == "3" and computer == "2":
+        print(f"user goes with Rock and compter goes with scissors, user wins....")
+elif user == "3" and computer == "3":
+        print(f"user goes with rock same as compter, match is drawww..")
+
+else:
+    print("Enter a valid number i.e 1,2,3")
